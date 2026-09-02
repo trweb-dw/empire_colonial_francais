@@ -17,7 +17,6 @@ body {
     color: #202020;
     background: #f7f7f5;
     overflow-x: clip;
-
 }
 
 h1,
@@ -31,6 +30,18 @@ p {
     margin-bottom: 15px;
 }
 
+.card{
+        transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+.card:hover{
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.08);
+}
 
 /* Barre de navigation */
 
@@ -298,16 +309,6 @@ p {
 
     border: 1px solid #dddddd;
 
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-.context-card:hover {
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 .context-card h3 {
@@ -419,16 +420,6 @@ p {
 
     border: 1px solid #dddddd;
 
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
-}
-
-.justification-card:hover{
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 .justification-card h3 {
@@ -609,17 +600,6 @@ summary::marker {
     background: white;
 
     border: 1px solid #dddddd;
-
-    transition:
-        transform 0.2s ease,
-        box-shadow 0.2s ease;
-}
-
-.dec-card:hover {
-    transform: translateY(-5px);
-
-    box-shadow:
-        0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 .dec-card h3 {
