@@ -35,7 +35,7 @@ p {
     background-color: #0d1b2a ;
 }
 
-.section-constitution, .section-crhonologie{
+.section-constitution, .section-chronologie{
     background-color: #1b263b;
 }
 
@@ -61,8 +61,6 @@ p {
 
 .card:hover {
   transform: translateY(-5px);
-
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 /* Barre de navigation */
@@ -259,7 +257,7 @@ p {
 .section-label {
   margin-bottom: 15px;
 
-  color: #a51e2a;
+  color: #df6670;
 
   font-size: 13px;
   font-weight: bold;
@@ -287,6 +285,14 @@ p {
 
 /* Contexte */
 
+.section-contexte h2,h3{
+    color: #ffffff;
+}
+
+.section-contexte p{
+    color: d8e0e8;
+}
+
 .context-grid {
   display: grid;
 
@@ -300,9 +306,9 @@ p {
 
   padding: 35px;
 
-  background: white;
+  background: #14263d;
 
-  border: 1px solid #dddddd;
+  border: 1px solid #29415c;
 }
 
 .context-card h3 {
@@ -311,10 +317,12 @@ p {
   font-size: 28px;
 
   line-height: 1.2;
+  
+  color: #ffffff;
 }
 
 .context-card p {
-  color: #555555;
+  color: #cbd5df;
 }
 
 .context-conclusion {
@@ -322,27 +330,58 @@ p {
 
   padding: 35px;
 
-  background: #14263d;
+  background: #081522;
 
-  color: white;
-
-  border-left: 5px solid #b72b38;
+  border-left: 5px solid #c8323e;
 }
 
 .context-conclusion h3 {
   margin-bottom: 12px;
 
   font-size: 30px;
+
+  color: #ffffff;
 }
 
-/* Chronologie de l'Empire */
+.context-conclusion p{
+    color: #d8e0e8;
+}
+
+.context-grid:hover{
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+
+}
+
+/* Constitution de l'Empire */
+
+.section-constitution h2,h3{
+    color: #ffffff;
+}
+
+.section-constitution p{
+    color: #d8e0e8;
+}
+
+.section-constitution .section-label{
+    color: #df6670;
+}
+
+.timeline-content p{
+    color: #cbd2da;
+}
+
+.timeline-content h3 {
+  margin-bottom: 12px;
+
+  font-size: 28px;
+}
 
 .timeline {
   max-width: 950px;
 
   margin-top: 60px;
 
-  border-left: 2px solid #4d6680;
+  border-left: 2px solid #617a96;
 }
 
 .timeline-item {
@@ -379,17 +418,19 @@ p {
   font-weight: bold;
 }
 
-.timeline-content h3 {
-  margin-bottom: 12px;
-
-  font-size: 28px;
-}
-
-.timeline-content p {
-  color: #cbd2da;
-}
-
 /* Justifications */
+
+.section-justification h2{
+    color: #ffffff;
+}
+
+.section-justification h3{
+    color: #14263d;
+}
+
+.section-justification .section-introduction{
+    color: #e7edf2;
+}
 
 .justification-grid {
   display: grid;
@@ -400,24 +441,30 @@ p {
 }
 
 .justification-card {
-  min-height: 350px;
+  min-height: 200px;
 
   padding: 35px;
 
-  background: white;
+  background:#f5f6f4;
 
-  border: 1px solid #dddddd;
+  border: 1px solid #d6dce1;
 }
 
 .justification-card h3 {
   margin-bottom: 18px;
-
   font-size: 28px;
+
+  color: #14263d;
 }
 
 .justification-card p {
-  color: #555555;
+  color: #46515c;
 }
+
+.section-justification .card:hover{
+    box-shadow: 0 15px 35px rgba(20, 38, 61, 0.15);
+}
+
 
 .ferry-box {
   margin-top: 35px;
@@ -452,18 +499,36 @@ p {
 
   padding: 35px;
 
-  background: #f0f1f2;
+  background: #eef1f3;
 
-  border: 1px solid #dddddd;
+  border: 1px solid #d2d9df;
 }
 
 .neutral-note h3 {
   margin-bottom: 12px;
 
   font-size: 28px;
+
+  color: #14263d;
+}
+
+.neutral-bote p{
+    color: #46515c;
 }
 
 /* Fonctionnement */
+
+.section-fonctionnement .section-label{
+    color: #8f1d28;
+}
+
+.section-fonctionnement h2{
+    color: #14263d;
+}
+
+.section-fonctionnement .section-introduction{
+    color:#46515c;
+}
 
 .function-grid {
   display: grid;
@@ -476,21 +541,20 @@ p {
 .function-card {
   padding: 32px;
 
-  background: white;
+  background: #f8f9f8;
 
-  border: 1px solid #dddddd;
+  border: 1px solid #d8dde1;
 }
 
-.function-card h3 {
-  margin-bottom: 15px;
-
-  font-size: 26px;
-
-  line-height: 1.2;
+.function-card h3{
+    margin-bottom: 15px;
+    color: #14263d;
+    font-size: 26px;
+    line-height: 1.2;
 }
 
 .function-card p {
-  color: #555555;
+  color: #46515c;
 }
 
 .details-container {
@@ -502,9 +566,9 @@ p {
 details {
   margin-bottom: 15px;
 
-  background: white;
+  background:#f8f9f8;
 
-  border: 1px solid #d9d9d9;
+  border: 1px solid #d8dde1;
 
   border-radius: 4px;
 
@@ -520,6 +584,8 @@ summary {
 
   font-size: 22px;
   font-weight: bold;
+  
+  color: #14263d;
 }
 
 summary::marker {
@@ -529,10 +595,26 @@ summary::marker {
 .details-content {
   padding: 0 25px 25px;
 
-  color: #555555;
+  color: #46515c;
+}
+
+.section-fonctionnement .card:hover{
+      box-shadow: 0 15px 35px rgba(20, 38, 61, 0.15);
 }
 
 /* Guerres */
+
+.section-guerres .section-container h2{
+    color: #14263d;
+}
+
+.section-guerres .section-container .section-label{
+    color: #8f1d28;
+}
+
+.section-guerres .section-introduction{
+    color: #46515c;
+}
 
 .war-grid {
   display: grid;
@@ -545,9 +627,9 @@ summary::marker {
 .war-card {
   padding: 38px;
 
-  background: #1b2a3d;
+  background: #f8f9f8;
 
-  border: 1px solid #2c3d52;
+  border: 1px solid #cfd4d7;
 
   border-top: 4px solid #c8323e;
 }
@@ -558,13 +640,28 @@ summary::marker {
   font-size: 29px;
 
   line-height: 1.2;
+  
+  color: #14263d;
 }
 
 .war-card p {
-  color: #cbd2da;
+  color: #46515c;
+}
+
+.war-card:hover{
+    background: #ffffff;
+    box-shadow: 0 15px 35px rgba(20,38,61,0.12);
 }
 
 /* Décolonisation */
+
+.section-decolonisation h2,h3{
+    color: white;
+}
+
+.section-decolonisation .section-introduction{
+    color: #d8e0e8;
+}
 
 .decolonisation-grid {
   display: grid;
@@ -577,9 +674,9 @@ summary::marker {
 .dec-card {
   padding: 38px;
 
-  background: white;
+  background: #14263d;
 
-  border: 1px solid #dddddd;
+  border: 1px solid #29415c;
 }
 
 .dec-card h3 {
@@ -588,10 +685,17 @@ summary::marker {
   font-size: 29px;
 
   line-height: 1.2;
+
+  color: white;
 }
 
 .dec-card p {
-  color: #555555;
+  color: #cbd5df;
+}
+
+.section-decolonisation .card:hover{
+    background-color: #19324d;
+    border: #3d5d7c;
 }
 
 .decolonisation-final {
@@ -599,7 +703,7 @@ summary::marker {
 
   padding: 40px;
 
-  background: #14263d;
+  background: #29415c;
 
   color: white;
 
@@ -613,6 +717,18 @@ summary::marker {
 }
 
 /* Grande chronologie */
+
+.section-chronologie .section-label{
+    color: #df6670;
+}
+
+.section-chronologie h2, h3{
+    color: white;
+}
+
+.section-chronologie p{
+    color: #d8e0e8;
+}
 
 .main-timeline {
   max-width: 1000px;
@@ -647,11 +763,11 @@ summary::marker {
 
   border-radius: 50%;
 
-  background: #b72b38;
+  background: #c83323;
 }
 
 .main-year {
-  color: #a51e2a;
+  color: #df6670;
 
   font-weight: bold;
 
@@ -662,15 +778,29 @@ summary::marker {
   margin-bottom: 10px;
 
   font-size: 28px;
+
+  color: white;
 }
 
 .main-timeline-item p {
   max-width: 700px;
 
-  color: #555555;
+  color: #cbd2da;
 }
 
 /* Réflexion critique */
+
+.section-reflexion .section-label{
+    color: #d37882;
+}
+
+.section-reflexion h2{
+    color: white;
+}
+
+.section-reflexion p{
+    color:#e7edf2;
+}
 
 .reflection-block {
   margin-top: 70px;
@@ -704,21 +834,16 @@ summary::marker {
   font-family: Arial, Helvetica, sans-serif;
 
   font-size: 22px;
+
+  color: white;
 }
 
 .comparison-item p {
-  color: #cbd2da;
-}
-
-.table-reference {
-  margin-top: 25px;
-
-  color: #cbd2da;
-
-  font-style: italic;
+  color: #d8e0e8;
 }
 
 /* Conséquences */
+
 
 .consequence-grid {
   display: grid;
@@ -740,10 +865,12 @@ summary::marker {
   font-family: Arial, Helvetica, sans-serif;
 
   font-size: 21px;
+
+  color: white;
 }
 
 .consequence-grid p {
-  color: #cbd2da;
+  color: #d8e0e8;
 }
 
 /* Héritages */
@@ -768,10 +895,12 @@ summary::marker {
   font-family: Arial, Helvetica, sans-serif;
 
   font-size: 20px;
+
+  color: white;
 }
 
 .heritage-grid p {
-  color: #cbd2da;
+  color: #d8e0e8;
 
   font-size: 15px;
 }
@@ -790,12 +919,18 @@ summary::marker {
   margin-bottom: 35px;
 
   font-size: clamp(40px, 5vw, 62px);
+
+  color: #14263d;
+}
+
+.section-conclusion p{
+    color: #46515c;
 }
 
 .section-conclusion > .section-container > p {
   margin-bottom: 22px;
 
-  color: #444444;
+  color: #46515c;
 
   font-size: 18px;
 }
@@ -814,6 +949,8 @@ summary::marker {
   margin-bottom: 15px;
 
   font-size: 31px;
+
+  color: #14264d;
 }
 
 .final-answer p {
