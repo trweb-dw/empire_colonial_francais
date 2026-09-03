@@ -1,1083 +1,1043 @@
 /* Réglages généraux */
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    overflow-x: clip;
+  scroll-behavior: smooth;
+  overflow-x: clip;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.65;
-    color: #202020;
-    background: #f7f7f5;
-    overflow-x: clip;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.65;
+  color: #202020;
+  overflow-x: clip;
 }
 
 h1,
 h2,
 h3,
 h4 {
-    font-family: Georgia, "Times New Roman", serif;
+  font-family: Georgia, "Times New Roman", serif;
 }
 
 p {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
-.card{
-        transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease;
+/* Fond de sections */
+
+.section-contexte, .section-decolonisation{
+    background-color: #0d1b2a ;
 }
 
-.card:hover{
-    transform: translateY(-5px);
+.section-constitution, .section-crhonologie{
+    background-color: #1b263b;
+}
 
-    box-shadow:
-        0 15px 35px rgba(0, 0, 0, 0.08);
+.section-justification, .section-reflexion{
+    background-color: #415a77;
+}
+
+.section-fonctionnement, .section-conclusion{
+    background-color: #778da9;
+}
+
+.section-guerres, .section-final{
+    background-color: #e0e1dd;
+}
+
+/* Cards */
+
+.card {
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
 }
 
 /* Barre de navigation */
 
 .header {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 
-    background: rgba(255, 255, 255, 0.97);
+  background: rgba(255, 255, 255, 0.97);
 
-    border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
 }
 
 .header-content {
-    max-width: 1250px;
-    min-height: 78px;
+  max-width: 1250px;
+  min-height: 78px;
 
-    margin: auto;
-    padding: 0 30px;
+  margin: auto;
+  padding: 0 30px;
 
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-    gap: 30px;
+  gap: 30px;
 }
 
 .logo {
-    color: #14263d;
-    text-decoration: none;
+  color: #14263d;
+  text-decoration: none;
 
-    font-family: Georgia, "Times New Roman", serif;
+  font-family: Georgia, "Times New Roman", serif;
 
-    font-size: 21px;
-    font-weight: bold;
+  font-size: 21px;
+  font-weight: bold;
 
-    white-space: nowrap;
+  white-space: nowrap;
 }
 
 .navigation {
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    gap: 18px;
+  gap: 18px;
 }
 
 .navigation a {
-    color: #333333;
-    text-decoration: none;
+  color: #333333;
+  text-decoration: none;
 
-    font-size: 13px;
-    font-weight: bold;
+  font-size: 13px;
+  font-weight: bold;
 
-    transition: color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .navigation a:hover {
-    color: #a51e2a;
-    text-decoration: underline;
+  color: #a51e2a;
+  text-decoration: underline;
 }
-
 
 /* Accueil */
 
 .hero {
-    min-height: 720px;
+  min-height: 720px;
 
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 
-    color: white;
+  color: white;
 
-    background:
-        linear-gradient(
-            135deg,
-            #071b32 0%,
-            #123c68 52%,
-            #801a26 100%
-        );
+  background: linear-gradient(135deg, #071b32 0%, #123c68 52%, #801a26 100%);
 
-    position: relative;
+  position: relative;
 }
 
 .hero::before {
-    content: "";
+  content: "";
 
-    position: absolute;
-    inset: 0;
+  position: absolute;
+  inset: 0;
 
-    background:
-        radial-gradient(
-            circle at 80% 25%,
-            rgba(255, 255, 255, 0.12),
-            transparent 35%
-        );
+  background: radial-gradient(
+    circle at 80% 25%,
+    rgba(255, 255, 255, 0.12),
+    transparent 35%
+  );
 }
 
 .hero-content {
-    position: relative;
+  position: relative;
 
-    max-width: 1250px;
-    width: 100%;
+  max-width: 1250px;
+  width: 100%;
 
-    margin: auto;
-    padding: 110px 30px;
+  margin: auto;
+  padding: 110px 30px;
 }
 
 .small-title {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 
-    font-size: 13px;
-    font-weight: bold;
+  font-size: 13px;
+  font-weight: bold;
 
-    letter-spacing: 3px;
+  letter-spacing: 3px;
 
-    opacity: 0.85;
+  opacity: 0.85;
 }
 
 .hero h1 {
-    max-width: 1000px;
+  max-width: 1000px;
 
-    margin-bottom: 28px;
+  margin-bottom: 28px;
 
-    font-size: clamp(52px, 8vw, 105px);
+  font-size: clamp(52px, 8vw, 105px);
 
-    line-height: 0.95;
+  line-height: 0.95;
 }
 
 .hero h2 {
-    max-width: 780px;
+  max-width: 780px;
 
-    margin-bottom: 35px;
+  margin-bottom: 35px;
 
-    font-size: clamp(28px, 4vw, 48px);
+  font-size: clamp(28px, 4vw, 48px);
 
-    line-height: 1.15;
+  line-height: 1.15;
 
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .hero-description {
-    max-width: 700px;
+  max-width: 700px;
 
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 
-    font-size: 19px;
+  font-size: 19px;
 
-    color: rgba(255, 255, 255, 0.88);
+  color: rgba(255, 255, 255, 0.88);
 }
-
 
 /* Boutons */
 
 .button {
-    display: inline-block;
+  display: inline-block;
 
-    padding: 14px 26px;
+  padding: 14px 26px;
 
-    background: white;
-    color: #14263d;
+  background: white;
+  color: #14263d;
 
-    border-radius: 8px;
+  border-radius: 8px;
 
-    text-decoration: none;
+  text-decoration: none;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    transition:
-        transform 0.2s ease,
-        background 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    background 0.2s ease;
 }
 
 .button:hover {
-    transform: translateY(-3px);
+  transform: translateY(-3px);
 
-    background: #eeeeee;
+  background: #eeeeee;
 }
 
 .button-dark {
-    background: #14263d;
-    color: white;
+  background: #14263d;
+  color: white;
 }
 
 .button-dark:hover {
-    background: #233d5c;
+  background: #233d5c;
 }
-
 
 /* Sections */
 
 .section {
-    padding: 110px 30px;
+  padding: 110px 30px;
 }
 
 .section-container {
-    max-width: 1200px;
-    margin: auto;
+  max-width: 1200px;
+  margin: auto;
 }
 
 .section-label {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    color: #a51e2a;
+  color: #a51e2a;
 
-    font-size: 13px;
-    font-weight: bold;
+  font-size: 13px;
+  font-weight: bold;
 
-    letter-spacing: 2px;
+  letter-spacing: 2px;
 }
 
 .section h2 {
-    margin-bottom: 25px;
+  margin-bottom: 25px;
 
-    font-size: clamp(38px, 5vw, 62px);
+  font-size: clamp(38px, 5vw, 62px);
 
-    line-height: 1.05;
+  line-height: 1.05;
 }
 
 .section-introduction {
-    max-width: 850px;
+  max-width: 850px;
 
-    margin-bottom: 60px;
+  margin-bottom: 60px;
 
-    color: #555555;
+  color: #555555;
 
-    font-size: 18px;
+  font-size: 18px;
 }
-
-
-/* Sections sombres */
-
-.section-dark {
-    background: #111c2c;
-    color: white;
-}
-
-.section-dark .section-label {
-    color: #df6670;
-}
-
-.section-dark .section-introduction {
-    color: #c8cfd8;
-}
-
 
 /* Contexte */
 
 .context-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 
-    gap: 25px;
+  gap: 25px;
 }
 
 .context-card {
-    min-height: 200px;
+  min-height: 200px;
 
-    padding: 35px;
+  padding: 35px;
 
-    background: white;
+  background: white;
 
-    border: 1px solid #dddddd;
-
+  border: 1px solid #dddddd;
 }
 
 .context-card h3 {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 
-    font-size: 28px;
+  font-size: 28px;
 
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 .context-card p {
-    color: #555555;
+  color: #555555;
 }
 
 .context-conclusion {
-    margin-top: 35px;
+  margin-top: 35px;
 
-    padding: 35px;
+  padding: 35px;
 
-    background: #14263d;
+  background: #14263d;
 
-    color: white;
+  color: white;
 
-    border-left: 5px solid #b72b38;
+  border-left: 5px solid #b72b38;
 }
 
 .context-conclusion h3 {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    font-size: 30px;
+  font-size: 30px;
 }
-
 
 /* Chronologie de l'Empire */
 
 .timeline {
-    max-width: 950px;
+  max-width: 950px;
 
-    margin-top: 60px;
+  margin-top: 60px;
 
-    border-left: 2px solid #4d6680;
+  border-left: 2px solid #4d6680;
 }
 
 .timeline-item {
-    position: relative;
+  position: relative;
 
-    display: grid;
+  display: grid;
 
-    grid-template-columns: 170px 1fr;
+  grid-template-columns: 170px 1fr;
 
-    gap: 30px;
+  gap: 30px;
 
-    padding:
-        0
-        0
-        55px
-        45px;
+  padding: 0 0 55px 45px;
 }
 
 .timeline-item::before {
-    content: "";
+  content: "";
 
-    position: absolute;
+  position: absolute;
 
-    left: -8px;
-    top: 5px;
+  left: -8px;
+  top: 5px;
 
-    width: 14px;
-    height: 14px;
+  width: 14px;
+  height: 14px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    background: #c8323e;
+  background: #c8323e;
 }
 
 .timeline-date {
-    color: #df6670;
+  color: #df6670;
 
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .timeline-content h3 {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .timeline-content p {
-    color: #cbd2da;
+  color: #cbd2da;
 }
-
 
 /* Justifications */
 
 .justification-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
-    gap: 25px;
+  gap: 25px;
 }
 
 .justification-card {
-    min-height: 350px;
+  min-height: 350px;
 
-    padding: 35px;
+  padding: 35px;
 
-    background: white;
+  background: white;
 
-    border: 1px solid #dddddd;
-
+  border: 1px solid #dddddd;
 }
 
 .justification-card h3 {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .justification-card p {
-    color: #555555;
+  color: #555555;
 }
 
 .ferry-box {
-    margin-top: 35px;
+  margin-top: 35px;
 
-    padding: 40px;
+  padding: 40px;
 
-    background: #14263d;
+  background: #14263d;
 
-    color: white;
+  color: white;
 
-    border-left: 5px solid #c8323e;
+  border-left: 5px solid #c8323e;
 }
 
 .ferry-title {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    color: #df6670;
+  color: #df6670;
 
-    font-size: 13px;
-    font-weight: bold;
+  font-size: 13px;
+  font-weight: bold;
 
-    letter-spacing: 2px;
-    text-transform: uppercase;
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .ferry-box p {
-    color: #d8dee5;
+  color: #d8dee5;
 }
 
 .neutral-note {
-    margin-top: 25px;
+  margin-top: 25px;
 
-    padding: 35px;
+  padding: 35px;
 
-    background: #f0f1f2;
+  background: #f0f1f2;
 
-    border: 1px solid #dddddd;
+  border: 1px solid #dddddd;
 }
 
 .neutral-note h3 {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    font-size: 28px;
+  font-size: 28px;
 }
-
 
 /* Fonctionnement */
 
-.section-light {
-    background: #edf0f3;
-}
-
 .function-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
-    gap: 25px;
+  gap: 25px;
 }
 
 .function-card {
-    padding: 32px;
+  padding: 32px;
 
-    background: white;
+  background: white;
 
-    border: 1px solid #dddddd;
+  border: 1px solid #dddddd;
 }
 
 .function-card h3 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    font-size: 26px;
+  font-size: 26px;
 
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 .function-card p {
-    color: #555555;
+  color: #555555;
 }
 
 .details-container {
-    max-width: 950px;
+  max-width: 950px;
 
-    margin-top: 35px;
+  margin-top: 35px;
 }
 
 details {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    background: white;
+  background: white;
 
-    border: 1px solid #d9d9d9;
+  border: 1px solid #d9d9d9;
 
-    border-radius: 4px;
+  border-radius: 4px;
 
-    overflow: hidden;
+  overflow: hidden;
 }
 
 summary {
-    cursor: pointer;
+  cursor: pointer;
 
-    padding: 22px 25px;
+  padding: 22px 25px;
 
-    font-family: Georgia, "Times New Roman", serif;
+  font-family: Georgia, "Times New Roman", serif;
 
-    font-size: 22px;
-    font-weight: bold;
+  font-size: 22px;
+  font-weight: bold;
 }
 
 summary::marker {
-    color: #a51e2a;
+  color: #a51e2a;
 }
 
 .details-content {
-    padding: 0 25px 25px;
+  padding: 0 25px 25px;
 
-    color: #555555;
+  color: #555555;
 }
-
 
 /* Guerres */
 
 .war-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 
-    gap: 25px;
+  gap: 25px;
 }
 
 .war-card {
-    padding: 38px;
+  padding: 38px;
 
-    background: #1b2a3d;
+  background: #1b2a3d;
 
-    border: 1px solid #2c3d52;
+  border: 1px solid #2c3d52;
 
-    border-top: 4px solid #c8323e;
+  border-top: 4px solid #c8323e;
 }
 
 .war-card h3 {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 
-    font-size: 29px;
+  font-size: 29px;
 
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 .war-card p {
-    color: #cbd2da;
+  color: #cbd2da;
 }
-
 
 /* Décolonisation */
 
 .decolonisation-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 
-    gap: 25px;
+  gap: 25px;
 }
 
 .dec-card {
-    padding: 38px;
+  padding: 38px;
 
-    background: white;
+  background: white;
 
-    border: 1px solid #dddddd;
+  border: 1px solid #dddddd;
 }
 
 .dec-card h3 {
-    margin-bottom: 18px;
+  margin-bottom: 18px;
 
-    font-size: 29px;
+  font-size: 29px;
 
-    line-height: 1.2;
+  line-height: 1.2;
 }
 
 .dec-card p {
-    color: #555555;
+  color: #555555;
 }
 
 .decolonisation-final {
-    margin-top: 35px;
+  margin-top: 35px;
 
-    padding: 40px;
+  padding: 40px;
 
-    background: #14263d;
+  background: #14263d;
 
-    color: white;
+  color: white;
 
-    border-left: 5px solid #c8323e;
+  border-left: 5px solid #c8323e;
 }
 
 .decolonisation-final h3 {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    font-size: 30px;
+  font-size: 30px;
 }
-
 
 /* Grande chronologie */
 
 .main-timeline {
-    max-width: 1000px;
+  max-width: 1000px;
 
-    margin: 60px auto 0;
+  margin: 60px auto 0;
 
-    border-left: 2px solid #b72b38;
+  border-left: 2px solid #b72b38;
 }
 
 .main-timeline-item {
-    position: relative;
+  position: relative;
 
-    display: grid;
+  display: grid;
 
-    grid-template-columns: 180px 1fr;
+  grid-template-columns: 180px 1fr;
 
-    gap: 30px;
+  gap: 30px;
 
-    padding:
-        0
-        0
-        45px
-        45px;
+  padding: 0 0 45px 45px;
 }
 
 .main-timeline-item::before {
-    content: "";
+  content: "";
 
-    position: absolute;
+  position: absolute;
 
-    left: -8px;
-    top: 5px;
+  left: -8px;
+  top: 5px;
 
-    width: 14px;
-    height: 14px;
+  width: 14px;
+  height: 14px;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    background: #b72b38;
+  background: #b72b38;
 }
 
 .main-year {
-    color: #a51e2a;
+  color: #a51e2a;
 
-    font-weight: bold;
+  font-weight: bold;
 
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .main-timeline-item h3 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    font-size: 28px;
+  font-size: 28px;
 }
 
 .main-timeline-item p {
-    max-width: 700px;
+  max-width: 700px;
 
-    color: #555555;
+  color: #555555;
 }
-
 
 /* Réflexion critique */
 
 .reflection-block {
-    margin-top: 70px;
+  margin-top: 70px;
 }
 
 .reflection-block h3 {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .comparison {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 
-    gap: 20px;
+  gap: 20px;
 }
 
 .comparison-item {
-    padding: 30px;
+  padding: 30px;
 
-    background: #1b2a3d;
+  background: #1b2a3d;
 
-    border-top: 3px solid #c8323e;
+  border-top: 3px solid #c8323e;
 }
 
 .comparison-item h4 {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
-    font-size: 22px;
+  font-size: 22px;
 }
 
 .comparison-item p {
-    color: #cbd2da;
+  color: #cbd2da;
 }
 
 .table-reference {
-    margin-top: 25px;
+  margin-top: 25px;
 
-    color: #cbd2da;
+  color: #cbd2da;
 
-    font-style: italic;
+  font-style: italic;
 }
-
 
 /* Conséquences */
 
 .consequence-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
 
-    gap: 20px;
+  gap: 20px;
 }
 
 .consequence-grid > div {
-    padding: 30px;
+  padding: 30px;
 
-    background: #1b2a3d;
+  background: #1b2a3d;
 }
 
 .consequence-grid h4 {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
-    font-size: 21px;
+  font-size: 21px;
 }
 
 .consequence-grid p {
-    color: #cbd2da;
+  color: #cbd2da;
 }
-
 
 /* Héritages */
 
 .heritage-grid {
-    display: grid;
+  display: grid;
 
-    grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
-    gap: 20px;
+  gap: 20px;
 }
 
 .heritage-grid > div {
-    padding: 28px;
+  padding: 28px;
 
-    background: #1b2a3d;
+  background: #1b2a3d;
 }
 
 .heritage-grid h4 {
-    margin-bottom: 12px;
+  margin-bottom: 12px;
 
-    font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
 
-    font-size: 20px;
+  font-size: 20px;
 }
 
 .heritage-grid p {
-    color: #cbd2da;
+  color: #cbd2da;
 
-    font-size: 15px;
+  font-size: 15px;
 }
-
 
 /* Conclusion */
 
-.conclusion-section {
-    padding: 110px 30px;
-
-    background: white;
+.section-conclusion {
+  padding: 110px 30px;
 }
 
-.conclusion-section .section-container {
-    max-width: 1000px;
+.section-conclusion .section-container {
+  max-width: 1000px;
 }
 
-.conclusion-section h2 {
-    margin-bottom: 35px;
+.section-conclusion h2 {
+  margin-bottom: 35px;
 
-    font-size: clamp(40px, 5vw, 62px);
+  font-size: clamp(40px, 5vw, 62px);
 }
 
-.conclusion-section > .section-container > p {
-    margin-bottom: 22px;
+.section-conclusion > .section-container > p {
+  margin-bottom: 22px;
 
-    color: #444444;
+  color: #444444;
 
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .final-answer {
-    margin-top: 50px;
+  margin-top: 50px;
 
-    padding: 40px;
+  padding: 40px;
 
-    background: #edf0f3;
+  background: #edf0f3;
 
-    border-left: 5px solid #a51e2a;
+  border-left: 5px solid #a51e2a;
 }
 
 .final-answer h3 {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 
-    font-size: 31px;
+  font-size: 31px;
 }
 
 .final-answer p {
-    margin-bottom: 0;
+  margin-bottom: 0;
 
-    color: #444444;
+  color: #444444;
 
-    font-size: 18px;
+  font-size: 18px;
 }
-
 
 /* Ressources et PDF */
 
-.resources {
-    padding: 90px 30px;
+.section-final {
+  padding: 90px 30px;
 
-    background: #e5e8eb;
+  background: #e5e8eb;
 }
 
-.resources h2 {
-    margin-bottom: 25px;
+.section-final h2 {
+  margin-bottom: 25px;
 
-    font-size: clamp(38px, 5vw, 55px);
+  font-size: clamp(38px, 5vw, 55px);
 }
 
-.resources p {
-    max-width: 800px;
+.section-final p {
+  max-width: 800px;
 
-    color: #555555;
+  color: #555555;
 
-    font-size: 18px;
+  font-size: 18px;
 }
 
 .resource-buttons {
-    display: flex;
+  display: flex;
 
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 
-    gap: 15px;
+  gap: 15px;
 
-    margin-top: 30px;
+  margin-top: 30px;
 }
-
 
 /* Pied de page */
 
 .footer {
-    padding: 45px 20px 15px;
+  padding: 45px 20px 15px;
 
-    background: #09111d;
+  background: #09111d;
 
-    color: white;
+  color: white;
 }
 
 .footer-content {
-    max-width: 1200px;
+  max-width: 1200px;
 
-    margin: auto;
+  margin: auto;
 
-    padding-bottom: 30px;
+  padding-bottom: 30px;
 
-    display: flex;
+  display: flex;
 
-    justify-content: space-between;
+  justify-content: space-between;
 
-    gap: 50px;
+  gap: 50px;
 }
 
 .footer h3 {
-    margin-bottom: 10px;
+  margin-bottom: 10px;
 
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .footer p {
-    color: #aeb7c2;
+  color: #aeb7c2;
 }
 
 .footer-bottom {
-    max-width: 1200px;
+  max-width: 1200px;
 
-    margin: auto;
+  margin: auto;
 
-    padding-top: 20px;
+  padding-top: 20px;
 
-    border-top: 1px solid #273443;
+  border-top: 1px solid #273443;
 
-    font-size: 13px;
+  font-size: 13px;
 }
-.footer-title, .footer-question, .footer-information {
-    flex: 1; 
+.footer-title,
+.footer-question,
+.footer-information {
+  flex: 1;
 }
 
 .footer-question {
-    text-align: center; 
-    font-size: 1.1em;
-    display: flex;
-    align-items: center; 
-    justify-content: center;
+  text-align: center;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .footer-information {
-    text-align: right; 
+  text-align: right;
 }
-
 
 /* Responsive */
 
 @media (max-width: 1100px) {
+  .header-content {
+    flex-direction: column;
 
-    .header-content {
-        flex-direction: column;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
 
-        padding-top: 18px;
-        padding-bottom: 18px;
-    }
+  .navigation {
+    justify-content: center;
+  }
 
-    .navigation {
-        justify-content: center;
-    }
-
-    .justification-grid,
-    .function-grid,
-    .heritage-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
+  .justification-grid,
+  .function-grid,
+  .heritage-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-
 
 @media (max-width: 800px) {
+  .section,
+  .section-conclusion {
+    padding: 80px 20px;
+  }
 
-    .section,
-    .conclusion-section {
-        padding: 80px 20px;
-    }
+  .hero-content {
+    padding: 90px 20px;
+  }
 
-    .hero-content {
-        padding: 90px 20px;
-    }
+  .context-grid,
+  .war-grid,
+  .decolonisation-grid,
+  .consequence-grid,
+  .comparison {
+    grid-template-columns: 1fr;
+  }
 
-    .context-grid,
-    .war-grid,
-    .decolonisation-grid,
-    .consequence-grid,
-    .comparison {
-        grid-template-columns: 1fr;
-    }
+  .timeline-item,
+  .main-timeline-item {
+    grid-template-columns: 1fr;
 
-    .timeline-item,
-    .main-timeline-item {
-        grid-template-columns: 1fr;
+    gap: 8px;
+  }
 
-        gap: 8px;
-    }
+  .heritage-grid,
+  .function-grid,
+  .justification-grid {
+    grid-template-columns: 1fr;
+  }
 
-    .heritage-grid,
-    .function-grid,
-    .justification-grid {
-        grid-template-columns: 1fr;
-    }
+  .timeline-item {
+    padding-left: 30px;
+  }
 
-    .timeline-item {
-        padding-left: 30px;
-    }
+  .main-timeline-item {
+    padding-left: 30px;
+  }
 
-    .main-timeline-item {
-        padding-left: 30px;
-    }
-
-    .footer-content {
-        flex-direction: column;
-    }
-
+  .footer-content {
+    flex-direction: column;
+  }
 }
 
-
 @media (max-width: 600px) {
+  .header-content {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 
-    .header-content {
-        padding-left: 15px;
-        padding-right: 15px;
-    }
+  .logo {
+    font-size: 18px;
+  }
 
-    .logo {
-        font-size: 18px;
-    }
+  .navigation {
+    gap: 10px 14px;
+  }
 
-    .navigation {
-        gap: 10px 14px;
-    }
+  .navigation a {
+    font-size: 12px;
+  }
 
-    .navigation a {
-        font-size: 12px;
-    }
+  .hero {
+    min-height: 650px;
+  }
 
-    .hero {
-        min-height: 650px;
-    }
+  .hero h1 {
+    font-size: 52px;
+  }
 
-    .hero h1 {
-        font-size: 52px;
-    }
+  .hero h2 {
+    font-size: 30px;
+  }
 
-    .hero h2 {
-        font-size: 30px;
-    }
+  .hero-description {
+    font-size: 17px;
+  }
 
-    .hero-description {
-        font-size: 17px;
-    }
+  .context-card,
+  .dec-card,
+  .function-card,
+  .war-card,
+  .justification-card {
+    padding: 28px;
+  }
 
-    .context-card,
-    .dec-card,
-    .function-card,
-    .war-card,
-    .justification-card {
-        padding: 28px;
-    }
+  .final-answer,
+  .ferry-box,
+  .context-conclusion,
+  .decolonisation-final {
+    padding: 28px;
+  }
 
-    .final-answer,
-    .ferry-box,
-    .context-conclusion,
-    .decolonisation-final {
-        padding: 28px;
-    }
+  .resource-buttons {
+    flex-direction: column;
+  }
 
-    .resource-buttons {
-        flex-direction: column;
-    }
-
-    .resource-buttons .button {
-        text-align: center;
-    }
-
+  .resource-buttons .button {
+    text-align: center;
+  }
 }
