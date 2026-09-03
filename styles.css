@@ -923,14 +923,10 @@ summary::marker {
   color: #14263d;
 }
 
-.section-conclusion p{
-    color: #46515c;
-}
-
 .section-conclusion > .section-container > p {
   margin-bottom: 22px;
 
-  color: #46515c;
+  color: #F8F9FA;
 
   font-size: 18px;
 }
